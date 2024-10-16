@@ -1,0 +1,236 @@
+@charset "UTF-8";
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #e6f1f2;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .profile-photo {
+  width: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .intro-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 40px;
+}
+
+header .intro-text h1 {
+  font-size: 2.5rem;
+  color: #555;
+}
+
+header .intro-text h2 {
+  font-size: 1.5rem;
+  color: #b3b3b3;
+}
+
+header .intro-text p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+header .intro-text .btn {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+header .intro-text .btn:hover {
+  background-color: #2275d7;
+}
+
+.how-i-help {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.how-i-help h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.how-i-help p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.how-i-help .help-image {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+  background-color: #e6f1f2;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.about-me h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about-me ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-me ul li {
+  font-size: 1rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-me ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+}
+
+.book-session {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.book-session h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.book-session .contact-info {
+  margin-bottom: 20px;
+}
+
+.book-session .contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.book-session .contact-info p a {
+  color: #4a90e2;
+}
+
+.book-session .contact-info p a:hover {
+  color: #2275d7;
+}
+
+.book-session .locations {
+  text-align: left;
+}
+
+.book-session .locations h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.book-session .locations ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.book-session .locations ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.book-session .locations .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.book-session .locations .btn:hover {
+  background-color: #2275d7;
+}
+
+footer {
+  background-color: #e6f1f2;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .profile-photo {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
