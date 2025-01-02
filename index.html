@@ -10,53 +10,55 @@
         content="psicologo, psicoterapeuta, Piacenza, Carpaneto, Parma, terapia cognitivo comportamentale, ACT, terapia online">
     <meta name="author" content="Dr. Derek Paraboschi">
     <title>Dr. Derek Paraboschi - Psicologo e Psicoterapeuta</title>
-    <link rel="stylesheet" href="./style/styles.css"> <!-- Se hai un file CSS -->
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 
 <body>
-
     <!-- Sezione Header con foto e informazioni principali -->
-    <header>
-        <div class="container">
-            <img src="your-photo.jpg" alt="Dr. Derek Paraboschi" class="profile-photo">
-            <div class="intro-text">
-                <h1>Dr. Derek Paraboschi</h1>
-                <h2>Psicologo Psicoterapeuta</h2>
-                <p>La sofferenza psicologica, in vari gradi, farà sempre parte della nostra vita. Quando sembra
-                    inaccettabile, quello che voglio offrire è uno spazio protetto in cui iniziare a lavorarci sopra,
-                    per impedire che questa sofferenza ci blocchi.</p>
-                <p>Sono uno <strong>psicologo psicoterapeuta</strong> che cerca di creare uno <strong>spazio
-                        sicuro</strong> per poter attraversare le nostre <strong>emozioni scomode</strong>, imparare a
-                    gestire <strong>pensieri ingombranti</strong> e affrontare <strong>situazioni difficili</strong>.
-                </p>
-                <a href="#prenota" class="btn">Prenota una Seduta</a>
-                <a href="#aiuto" class="btn">Come Ti Posso Aiutare</a>
-                <a href="#su-di-me" class="btn">Su di Me</a>
-            </div>
+    <section id="header" class="flex-container">
+        <div>
+            <img src="./src/img/profilePic.jpg" alt="Dr. Derek Paraboschi" class="profile-photo">
         </div>
-    </header>
+        <div class="text-content">
+            <h1>Dr. Derek Paraboschi</h1>
+            <h2>Psicologo Psicoterapeuta</h2>
+            <a href="#book-session" class="btn d-block">Prenota una Seduta</a>
+            <a href="#help" class="btn">Come Ti Posso Aiutare</a>
+            <a href="#about-me" class="btn">Su di Me</a>
+            <p>La sofferenza psicologica, in vari gradi, farà sempre parte della nostra vita. Quando sembra
+                inaccettabile, quello che voglio offrire è uno spazio protetto in cui iniziare a lavorarci sopra,
+                per impedire che questa sofferenza ci blocchi.</p>
+            <p>Sono uno <strong>psicologo psicoterapeuta</strong> che cerca di creare uno <strong>spazio
+                    sicuro</strong> per poter attraversare le nostre <strong>emozioni scomode</strong>, imparare a
+                gestire <strong>pensieri ingombranti</strong> e affrontare <strong>situazioni difficili</strong>.
+            </p>
+        </div>
+    </section>
 
     <!-- Sezione Come ti posso aiutare -->
-    <section id="aiuto" class="how-i-help">
-        <div class="container">
+    <section id="help" class="flex-container">
+        <div>
+            <img src="./src/img/whale.png" alt="Illustrazione terapeutica" class="help-image">
+        </div>
+        <div class="text-content">
             <h3>Come Ti Posso Aiutare?</h3>
             <p>Per i miei pazienti solitamente <strong>utilizzo un approccio</strong> che affonda le radici in ciò che
                 ho imparato da una <strong>visione psicobiologica del comportamento umano</strong> e lo unisce a una che
                 permette di fare spazio alle nostre <strong>vulnerabilità</strong>, alle nostre esperienze, ai nostri
                 pensieri e alle nostre <strong>emozioni</strong>.</p>
-            <img src="whale-image.jpg" alt="Illustrazione terapeutica" class="help-image">
         </div>
     </section>
 
     <!-- Sezione Su di Me -->
-    <section id="su-di-me" class="about-me">
-        <div class="container">
+    <section id="about-me" class="flex-container">
+        <div class="text-content">
             <h3>Su di Me</h3>
             <p>Ufficialmente vesto l'uniforme <strong>cognitivo comportamentale</strong> di terza generazione, ho una
                 propensione per le <strong>tecniche basate sull’evidenza</strong> cognitivo comportamentali e ACT.</p>
             <p>Durante l'<strong>esperienza</strong> che ho coltivato ho riconosciuto però che nei diversi approcci
                 psicoterapeutici le differenze, più che sui processi legati alla sofferenza umana, sono legate al
-                <strong>linguaggio</strong> che ognuno di noi usa per descriverle.</p>
+                <strong>linguaggio</strong> che ognuno di noi usa per descriverle.
+            </p>
             <p>Siamo quindi noi <strong>professionisti</strong> a dover <strong>adattare il nostro approccio</strong>
                 alle persone che ci chiedono aiuto, utilizzando il punto di vista che è più <strong>utile</strong> a
                 loro, e non a noi.</p>
@@ -65,11 +67,14 @@
                 <li>Diploma Scuola di Specializzazione ASCCO (Accademia Di Scienze Comportamentali e Cognitive)</li>
             </ul>
         </div>
+        <div class="image-side">
+            <img src="./src/img/pattern.jpg" alt="Illustrazione terapeutica" class="help-image">
+        </div>
     </section>
 
     <!-- Sezione Prenota una Seduta -->
-    <section id="prenota" class="book-session">
-        <div class="container">
+    <section id="book-session">
+        <div class="text-content">
             <h3>Prenota una Seduta</h3>
             <p>Se pensi che ti possa aiutare, contattami:</p>
             <div class="contact-info">
@@ -77,21 +82,28 @@
                 </p>
                 <p><strong>Telefono:</strong> <a href="tel:+393295352927">+39 329 53 52 927</a></p>
             </div>
-            <div class="locations">
-                <h4>Mi puoi trovare negli studi di:</h4>
-                <ul>
-                    <li><strong>Piacenza:</strong> Via A. Govoni, 5 presso "Il Filo di Arianna"</li>
-                    <li><strong>Carpaneto (PC):</strong> Via Vittorio Veneto, 23</li>
-                    <li><strong>Parma:</strong> P.zza Badalocchio Sisto Rosa 3/A presso "Schema Therapy Center"</li>
-                </ul>
-                <a href="prenota-online.html" class="btn">Colloquio Online</a>
+            <h4>Mi puoi trovare negli studi di:</h4>
+            <div class="locations flex-container">
+                <div>
+                    <div class="btn">Piacenza:</div>
+                    <p>Via A. Govoni, 5 presso "Il Filo di Arianna"</p>
+                </div>
+                <div>
+                    <div class="btn">Carpaneto (PC):</div>
+                    <p>via Vittorio Veneto, 23</p>
+                </div>
+                <div>
+                    <div class="btn">Parma:</div>
+                    <p>P.zza Badalocchio Sisto Rosa 3/A presso "Schema Therapy Center"</p>
+                </div>
             </div>
         </div>
+        <a href="prenota-online.html" class="btn cta">Colloquio Online</a>
     </section>
 
     <!-- Sezione Footer -->
     <footer>
-        <div class="container">
+        <div>
             <p>Dott. Derek Paraboschi | P.IVA 01774900334 | Ordine degli Psicologi della Lombardia - Iscrizione all'Albo
                 n°21012</p>
         </div>

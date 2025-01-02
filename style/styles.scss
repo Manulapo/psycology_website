@@ -1,11 +1,15 @@
-// Variabili di base
-$primary-color: #e6f1f2;
+$primary-color: #C2DBDB;
 $secondary-color: #fff;
 $text-color: #333;
 $highlight-color: #b3b3b3;
 $accent-color: #555;
-$btn-bg-color: #4a90e2;
-$btn-text-color: #fff;
+$btn-bg-color: #fff;
+$btn-text-color: #222;
+$btn-border-color: #222;
+
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Arial', sans-serif;
@@ -13,6 +17,10 @@ body {
   background-color: $primary-color;
   margin: 0;
   padding: 0;
+}
+
+section{
+  padding: 800px;
 }
 
 a {
@@ -30,165 +38,69 @@ a:hover {
   padding: 20px;
 }
 
-// Header
-header {
-  background-color: $secondary-color;
-  padding: 40px 0;
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .profile-photo {
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .intro-text {
-    flex: 1;
-    margin-left: 40px;
-    h1 {
-      font-size: 2.5rem;
-      color: $accent-color;
-    }
-    h2 {
-      font-size: 1.5rem;
-      color: $highlight-color;
-    }
-    p {
-      font-size: 1rem;
-      margin: 10px 0;
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px 5px 0;
-      padding: 10px 20px;
-      background-color: $btn-bg-color;
-      color: $btn-text-color;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      &:hover {
-        background-color: darken($btn-bg-color, 10%);
-      }
-    }
-  }
+section {
+  padding: 3em;
+  background-color: #fff;
+  margin: 3em;
 }
 
-// Sezione Come ti posso aiutare
-.how-i-help {
-  background-color: $secondary-color;
-  padding: 40px 20px;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  width: 80vw;
+  padding: 0 2em;
+  height: min-content;
+}
+
+.cta{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  background-color: #fff;
+  color: $btn-text-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid $btn-border-color;
+  letter-spacing: 4px;
+  border-radius: 500px;
+  font-size: .8rem;
+  display: block;
+  width: 300px;
+  margin: 10px 0;
   text-align: center;
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.locations{
+  div{
+    flex-basis: 30%;
   }
-  p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  .help-image {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  p{
+    text-align: center;
   }
 }
 
-// Sezione Su di Me
-.about-me {
-  background-color: $primary-color;
-  padding: 40px 20px;
-  text-align: left;
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    li {
-      font-size: 1rem;
-      padding-left: 20px;
-      position: relative;
-      &:before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: $btn-bg-color;
-      }
-    }
-  }
-}
 
-// Sezione Prenota una Seduta
-.book-session {
-  background-color: $secondary-color;
-  padding: 40px 20px;
-  text-align: center;
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  .contact-info {
-    margin-bottom: 20px;
-    p {
-      font-size: 1rem;
-      margin: 10px 0;
-      a {
-        color: $btn-bg-color;
-        &:hover {
-          color: darken($btn-bg-color, 10%);
-        }
-      }
-    }
-  }
-  .locations {
-    text-align: left;
-    h4 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      li {
-        font-size: 1rem;
-        margin-bottom: 5px;
-      }
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: $btn-bg-color;
-      color: $btn-text-color;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      &:hover {
-        background-color: darken($btn-bg-color, 10%);
-      }
-    }
-  }
-}
-
-// Footer
 footer {
-  background-color: $primary-color;
   text-align: center;
-  padding: 20px;
+  padding: 0 0 20px 0;
   p {
     font-size: 0.875rem;
-    color: $highlight-color;
+    color: $secondary-color;
   }
 }
 
