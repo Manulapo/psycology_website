@@ -1,0 +1,78 @@
+*,.text-thin {
+	font-family: "Lato", serif;
+	font-weight: 300;
+	font-style: normal;
+    text-transform: uppercase;
+    color: #A9A9A9;
+}
+
+.text-light {
+	font-family: "Lato", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+h2,.text-regular {
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h3,.text-bold {
+	font-family: "Lato", serif;
+	font-weight: 900;
+    font-size: 1.5em;
+    color: #000000;
+    opacity: .5;
+	font-style: normal;
+}
+
+h1,h2,h3{
+    letter-spacing: 8px;
+}
+
+h1,.text-black {
+	font-family: "Lato", serif;
+	font-weight: 900;
+	font-style: normal;
+    color: #222;
+    font-size: 2em;
+}
+
+.text-thin-italic {
+	font-family: "Lato", serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+h2,.text-light-italic {
+	font-family: "Lato", serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+p,.text-regular-italic {
+	font-family: "Lato", serif;
+	font-weight: 500;
+	font-style: italic;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+p strong{
+    font-weight: 700;
+    text-transform: none;
+}
+
+.text-bold-italic {
+	font-family: "Lato", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.text-black-italic {
+	font-family: "Lato", serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
