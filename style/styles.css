@@ -87,7 +87,7 @@ footer p {
 	border-radius: 500px;
 	font-size: clamp(0.875rem, 1.25vw, 1rem);
 	display: block;
-	width: clamp(200px, 55vw, 400px);
+	width: clamp(200px, 40vw, 400px);
 	margin: var(--base-margin) 0;
 	text-align: center;
 	cursor: pointer;
@@ -310,5 +310,9 @@ footer p {
 	#email-box img,
 	#phone-box img {
 		max-width: 30px;
+	}
+
+	.footer-text{
+		margin: 1em ;
 	}
 }
