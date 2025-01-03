@@ -1,9 +1,10 @@
-*,.text-thin {
+*,
+.text-thin {
 	font-family: "Lato", serif;
 	font-weight: 300;
 	font-style: normal;
-    text-transform: uppercase;
-    color: #A9A9A9;
+	text-transform: uppercase;
+	color: #a9a9a9;
 }
 
 .text-light {
@@ -12,31 +13,41 @@
 	font-style: normal;
 }
 
-h2,.text-regular {
+h2,
+h4,
+.text-regular {
 	font-family: "Lato", serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-h3,.text-bold {
+h3,
+.text-bold {
 	font-family: "Lato", serif;
 	font-weight: 900;
-    font-size: 1.5em;
-    color: #000000;
-    opacity: .5;
+	font-size: 1.8em;
+	color: #000000;
+	opacity: 0.5;
 	font-style: normal;
 }
 
-h1,h2,h3{
-    letter-spacing: 8px;
+h1,
+h2,
+h3{
+	letter-spacing: 10px;
 }
 
-h1,.text-black {
+h4{
+	letter-spacing: 5px;
+}
+
+h1,
+.text-black {
 	font-family: "Lato", serif;
 	font-weight: 900;
 	font-style: normal;
-    color: #222;
-    font-size: 2em;
+	color: #222;
+	font-size: 2.3em;
 }
 
 .text-thin-italic {
@@ -45,23 +56,27 @@ h1,.text-black {
 	font-style: italic;
 }
 
-h2,.text-light-italic {
+h2,
+.text-light-italic {
 	font-family: "Lato", serif;
 	font-weight: 500;
 	font-style: italic;
 }
 
-p,.text-regular-italic {
+p,
+.text-regular-italic {
 	font-family: "Lato", serif;
 	font-weight: 500;
 	font-style: italic;
-    text-transform: none;
-    letter-spacing: 1px;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+	line-height: 1.5;
 }
 
-p strong{
-    font-weight: 700;
-    text-transform: none;
+p strong {
+	font-weight: 700;
+	text-transform: none;
 }
 
 .text-bold-italic {
@@ -75,4 +90,3 @@ p strong{
 	font-weight: 900;
 	font-style: italic;
 }
-

@@ -24,7 +24,7 @@ body {
 section {
 	padding: 3em;
 	background-color: var(--secondary-color);
-	margin: 5em 3em;
+	margin: 5em;
 }
 
 a {
@@ -51,17 +51,11 @@ footer p {
 	color: var(--secondary-color);
 }
 
-.container {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
 .flex-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	gap: 2em;
+	gap: 3em;
 }
 
 .text-content {
@@ -70,8 +64,8 @@ footer p {
 }
 
 .cta {
-	margin: 0 auto;
-	width: 100%;
+	cursor: pointer;
+	pointer-events: visible;
 }
 
 .btn {
@@ -79,34 +73,35 @@ footer p {
 	color: var(--btn-text-color);
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: 10px 20px;
+	padding: 1em 1.5em;
 	border: 2px solid var(--btn-border-color);
 	letter-spacing: 4px;
 	border-radius: 500px;
-	font-size: 0.8rem;
-	display: block;
-	width: 300px;
+	font-size: 1rem;
+	display: block; 
+	width: 400px;
 	margin: 10px 0;
 	text-align: center;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
-.buttons-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .image-side {
-	max-width: 40%;
+	max-width: 50%;
 }
 
 .text-side {
-	max-width: 60%;
+	max-width: 50%;
+	gap: 2em;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
+.locations {
+	align-items: flex-start;
+	justify-content: center
+}
 
 .locations div {
 	flex-basis: 30%;
@@ -116,10 +111,91 @@ footer p {
 	text-align: center;
 }
 
+.button-box .btn{
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.no-cta {
+	pointer-events: none;
+	cursor: none;
+}
+
+.button-box {
+	text-align: center;
+	width: auto;
+}
+
+.contact-info a {
+	color: var(--text-color);
+	font-weight:400;
+	text-transform: none;
+
+}
+
 #header {
 	margin-top: 1.5em;
-  justify-content: space-between;
+	justify-content: space-around;
+	gap: 1em;
 }
+
+#header .image-side {
+	max-width: 45%;
+}
+
+#header .text-side {
+	max-width: 40%;
+}
+
+#help .image-side {
+	max-width: 30%;
+}
+
+#help .text-side {
+	max-width: 70%;
+}
+
+#about-me {
+	position: relative;
+	overflow: hidden;
+}
+
+#about-me .text-side {
+	max-width: 70%;
+	z-index: 1;
+}
+
+#about-me .image-side {
+	position: absolute;
+	top: 0;
+	right: -45%;
+	transform: scale(1.7);
+	z-index: 0;
+}
+
+#book-session .text-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+#book-session .text-content * {
+	text-align: center;
+}
+
+#email-box, #phone-box {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+#email-box img, #phone-box img {
+	max-width: 50px;
+}
+
+
 
 @media (max-width: 768px) {
 	header {
