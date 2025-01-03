@@ -1,14 +1,36 @@
+:root {
+	/* Typography Variables */
+	--font-family: "Lato", serif;
+	--text-color-light: #a9a9a9;
+	--text-color-black: #222;
+	--text-color-bold: #000;
+	--heading-spacing-large: clamp(5px, 1vw, 10px);
+	--heading-spacing-small: clamp(2px, 0.5vw, 5px);
+
+	/* Font Sizes */
+	--font-size-h1: clamp(1.8rem, 3vw, 2.3rem);
+	--font-size-h2: clamp(1.5rem, 2.5vw, 2rem);
+	--font-size-h3: clamp(1.2rem, 2vw, 1.8rem);
+	--font-size-h4: clamp(1rem, 1.5vw, 1.3rem);
+	--font-size-p: clamp(1rem, 1.2vw, 1.3rem);
+	--font-size-bold: clamp(1.5rem, 2vw, 2rem);
+
+	/* Line Heights */
+	--line-height-p: 1.5;
+}
+
+/* General Styles */
 *,
 .text-thin {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 300;
 	font-style: normal;
 	text-transform: uppercase;
-	color: #a9a9a9;
+	color: var(--text-color-light);
 }
 
 .text-light {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 300;
 	font-style: normal;
 }
@@ -16,62 +38,63 @@
 h2,
 h4,
 .text-regular {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-style: normal;
 }
 
 h3,
 .text-bold {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 900;
-	font-size: 1.8em;
-	color: #000000;
+	font-size: var(--font-size-bold);
+	color: var(--text-color-bold);
 	opacity: 0.5;
 	font-style: normal;
 }
 
 h1,
 h2,
-h3{
-	letter-spacing: 10px;
+h3 {
+	letter-spacing: var(--heading-spacing-large);
 }
 
-h4{
-	letter-spacing: 5px;
+h4 {
+	letter-spacing: var(--heading-spacing-small);
 }
 
 h1,
 .text-black {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 900;
 	font-style: normal;
-	color: #222;
-	font-size: 2.3em;
+	color: var(--text-color-black);
+	font-size: var(--font-size-h1);
 }
 
 .text-thin-italic {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 100;
 	font-style: italic;
 }
 
 h2,
 .text-light-italic {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 500;
 	font-style: italic;
+	font-size: var(--font-size-h2);
 }
 
 p,
 .text-regular-italic {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 500;
 	font-style: italic;
 	text-transform: none;
 	letter-spacing: 1px;
-	font-size: 1.3rem;
-	line-height: 1.5;
+	font-size: var(--font-size-p);
+	line-height: var(--line-height-p);
 }
 
 p strong {
@@ -80,13 +103,19 @@ p strong {
 }
 
 .text-bold-italic {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 700;
 	font-style: italic;
 }
 
 .text-black-italic {
-	font-family: "Lato", serif;
+	font-family: var(--font-family);
 	font-weight: 900;
 	font-style: italic;
+}
+
+@media (max-width: 768px) {
+	h2,h3,h4,p	{
+		text-align: center;
+	}
 }
