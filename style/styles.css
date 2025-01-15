@@ -215,6 +215,7 @@ footer p {
 
 @media (min-width: 1920px) {
 	section {
+		width: 95%;
 		max-width: 1800px;
 		margin: var(--base-margin) auto;
 	}
